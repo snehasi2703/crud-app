@@ -25,3 +25,27 @@ INSERT INTO person (
     'NC',
     '28801'
 );
+INSERT INTO client (
+   company_name ,
+    website_url,
+    phone_number ,
+    street_address ,
+    city,
+    state,
+    zip_code
+) VALUES (
+'abc tech',
+    'abc/tech.com',
+    '45323413415',
+    '123 Any St.',
+    'Asheville',
+    'NC',
+    '28801'
+), ('jobtech',
+    'growYourBusiness.com',
+    '456663413415',
+    '5656 Washington St.',
+    'Maine',
+    'MA',
+    '02801'
+);
