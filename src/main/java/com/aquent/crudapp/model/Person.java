@@ -1,4 +1,4 @@
-package com.aquent.crudapp.person;
+package com.aquent.crudapp.model;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -9,6 +9,9 @@ import javax.validation.constraints.Size;
 public class Person {
 
     private Integer personId;
+    
+    private int clientId;
+    private String companyName;
 
     @NotNull
     @Size(min = 1, max = 50, message = "First name is required with maximum length of 50")
@@ -31,7 +34,7 @@ public class Person {
     private String city;
 
     @NotNull
-    @Size(min = 2, max = 2, message = "State is required with length 2")
+    @Size(min = 2, max = 20, message = "State is required with min length 2")
     private String state;
 
     @NotNull
@@ -101,4 +104,20 @@ public class Person {
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
+
+	public int getClientId() {
+		return clientId;
+	}
+
+	public void setClientId(int clientId) {
+		this.clientId = clientId;
+	}
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
 }

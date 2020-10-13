@@ -1,21 +1,23 @@
-package com.aquent.crudapp.person;
+package com.aquent.crudapp.repository;
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.aquent.crudapp.model.Client;
+
 /**
- * Operations on the "person" table.
+ * Operations on the "client" table.
  */
 @Repository
-public interface PersonDao {
+public interface ClientDao {
 
     /**
      * Retrieves all of the person records.
      *
      * @return list of person records
      */
-    List<Person> listPeople();
+    List<Client> listPeople();
 
     /**
      * Creates a new person record.
@@ -23,7 +25,7 @@ public interface PersonDao {
      * @param person the values to save
      * @return the new person ID
      */
-    Integer createPerson(Person person);
+    Integer createPerson(Client person);
 
     /**
      * Retrieves a person record by ID.
@@ -31,14 +33,14 @@ public interface PersonDao {
      * @param id the person ID
      * @return the person record
      */
-    Person readPerson(Integer id);
+    Client readPerson(Integer id);
 
     /**
      * Updates an existing person record.
      *
      * @param person the new values to save
      */
-    void updatePerson(Person person);
+    void updatePerson(Client person);
 
     /**
      * Deletes a person record by ID.

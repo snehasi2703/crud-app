@@ -1,4 +1,4 @@
-package com.aquent.crudapp.person;
+package com.aquent.crudapp.service;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,6 +10,9 @@ import javax.validation.Validator;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.aquent.crudapp.model.Person;
+import com.aquent.crudapp.repository.PersonDao;
 
 /**
  * Default implementation of {@link PersonService}.

@@ -5,11 +5,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Person</title>
+    <title>Edit Client</title>
     <link class="style" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"  rel="stylesheet" type="text/css" media="screen" />
   </head>
   <body>
-  	<div class = "templates container" style="margin-top:30px">
+  <div class = "templates container" style="margin-top:30px">
   		<div class="row">
 			<div class="col-md-8">
 			    <th:block th:unless="${#lists.isEmpty(errors)}">
@@ -20,50 +20,49 @@
 			        </th:block>
 			      </ul>
 			    </th:block>
-			    <form action="/person/edit" class="form-horizontal" method="POST">
-			      <legend>Edit Person</legend>
-
+			    <form action="/client/edit" class="form-horizontal" method="POST">
+			      <legend>Edit Client</legend>
+				  <input type="hidden" name="clientId" th:value="${client.clientId}"/>
 			      <div class="form-group input-field">
 						<label class="col-sm-3 control-label">First Name:</label>
 						<div class="col-sm-9 control-size">
-						    <input type="hidden" name="personId" th:value="${person.personId}"/>
-							<input class="form-control" type="text" name="firstName" th:value="${person.firstName}" required="required"/>
+							<input class="form-control" type="text" name="firstName" th:value="${client.firstName}" required="required"/>
 						</div>
 				  </div>
 				  <div class="form-group input-field">
 						<label class="col-sm-3 control-label">Last Name:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="lastName" th:value="${person.lastName}" required="required"/>
+							<input class="form-control" type="text" name="lastName" th:value="${client.lastName}" required="required"/>
 						</div>
 				  </div>
 				  <div class="form-group input-field">
 						<label class="col-sm-3 control-label">Email Address:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="emailAddress" th:value="${person.emailAddress}" required="required"/>
+							<input class="form-control" type="text" name="emailAddress" th:value="${client.emailAddress}" required="required"/>
 						</div>
 				  </div>
 			     <div class="form-group input-field">
 						<label class="col-sm-3 control-label">Street Address:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="streetAddress" th:value="${person.streetAddress}" required="required"/>
+							<input class="form-control" type="text" name="streetAddress" th:value="${client.streetAddress}" required="required"/>
 						</div>
 				  </div>
 				  <div class="form-group input-field">
 						<label class="col-sm-3 control-label">City:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="city" th:value="${person.city}" required="required"/>
+							<input class="form-control" type="text" name="city" th:value="${client.city}" required="required"/>
 						</div>
 				  </div>
 				  <div class="form-group input-field">
 						<label class="col-sm-3 control-label">State:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="state" th:value="${person.state}" required="required"/>
+							<input class="form-control" type="text" name="state" th:value="${client.state}" required="required"/>
 						</div>
 				  </div>
 				  <div class="form-group input-field">
 						<label class="col-sm-3 control-label">Zip Code:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="zipCode" th:value="${person.zipCode}" required="required"/>
+							<input class="form-control" type="text" name="zipCode" th:value="${client.zipCode}" required="required"/>
 						</div>
 				  </div>
 				  <div class="form-group submit-button">

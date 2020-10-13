@@ -1,5 +1,4 @@
 INSERT INTO person (
-    client_id,
     first_name,
     last_name,
     email_address,
@@ -8,7 +7,6 @@ INSERT INTO person (
     state,
     zip_code
 ) VALUES (
-1,
     'John',
     'Smith',
     'fake1@aquent.com',
@@ -16,7 +14,7 @@ INSERT INTO person (
     'Asheville',
     'NC',
     '28801'
-), (2,
+), (
     'Jane',
     'Smith',
     'fake2@aquent.com',
