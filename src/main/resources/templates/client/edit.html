@@ -23,22 +23,22 @@
 			    <form action="/client/edit" class="form-horizontal" method="POST">
 			      <legend>Edit Client</legend>
 				  <input type="hidden" name="clientId" th:value="${client.clientId}"/>
-			      <div class="form-group input-field">
-						<label class="col-sm-3 control-label">First Name:</label>
+			     <div class="form-group input-field">
+						<label class="col-sm-3 control-label">Company Name:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="firstName" th:value="${client.firstName}" required="required"/>
+							<input class="form-control" type="text" name="companyName" th:value="${client.companyName}" required="required"/>
 						</div>
 				  </div>
 				  <div class="form-group input-field">
-						<label class="col-sm-3 control-label">Last Name:</label>
+						<label class="col-sm-3 control-label">Website URL:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="lastName" th:value="${client.lastName}" required="required"/>
+							<input class="form-control" type="text" name="websiteUrl" th:value="${client.websiteUrl}" required="required"/>
 						</div>
 				  </div>
 				  <div class="form-group input-field">
-						<label class="col-sm-3 control-label">Email Address:</label>
+						<label class="col-sm-3 control-label">Phone Number:</label>
 						<div class="col-sm-9 control-size">
-							<input class="form-control" type="text" name="emailAddress" th:value="${client.emailAddress}" required="required"/>
+							<input class="form-control" type="text" name="phoneNumber" th:value="${client.phoneNumber}" required="required"/>
 						</div>
 				  </div>
 			     <div class="form-group input-field">
